@@ -1,0 +1,164 @@
+body{
+    background:url("back.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+  position:absolute;
+  top:0px;
+  right:80px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(230, 165, 140);
+    color: rgb(255, 255, 255);
+  }
+  
+  .topnav a.active {
+    background-color: #a05234;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .container{
+    color: lavender;
+  }
+  
+  
+
+
+
+  /*Add font style in web page body*/
+*{
+	font-family: arial;
+}
+
+
+
+p{
+	font-size: 13px;
+	margin: 0;
+}
+h2{
+	color: #8E44AD;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  margin: 5% 35% 0 35%;
+  padding: 25px;
+  background-color:transparent;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 50px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 20px -18px 25px  rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+/*Add textbox style*/
+.textbox{
+	margin-bottom: 25px;
+	padding: 5px;
+	border: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ffffff;
+	font-size: 14x;
+  
+  
+  -webkit-text-fill-color: #fff;
+}
+/*Add user img style*/
+.User_img{
+	width: 150px;
+	height: 150px;
+  border: solid black 2px 3px;
+  box-shadow: black 2px 2px 2px 2px;
+
+  
+}
+.User_img:hover{
+  box-shadow: 10px -9px 5px  rgba(0,0,0,0.2);
+
+}
+/*Add style for sign in button */
+.btn_Next{
+	margin-top: 15px;
+	width: 150px;
+	border:0;
+	background-color: #3498DB;
+	color: #fff;
+	padding: 10px 25px 10px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*On mouse-over, add a deeper shadow*/
+.btn_Next:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #2874A6;
+}
+/*Add style for sign in button */
+.btn_signin{
+	margin-top: 15px;
+  
+	width: 150px;
+	border:0;
+	background-color: #2ECC71;
+	color: #fff;
+	padding: 10px 25px 10px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*On mouse-over, add a deeper shadow*/
+.btn_signin:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #239B56;
+}
+/*Add style for sign in button */
+.btn_clear{
+	width: 150px;
+	border:0;
+	background-color: #E74C3C;
+	color: #fff;
+	padding: 10px 25px 10px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*On mouse-over, add a deeper shadow*/
+.btn_clear:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #B03A2E;
+}
+.classs a{
+  color:red;
+  font-size: large;
+}

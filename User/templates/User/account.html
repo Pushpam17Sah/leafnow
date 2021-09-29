@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="account.css">
+            
+              
+        
+
+
+        <h1 style="color: rgb(255, 255, 255); font-size: 52px; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 1px;  text-shadow: black 1px 3px;">Account</h1>
+        <p class="navbar-brand" href="#"></p>
+
+
+
+
+    </head>
+    <body>
+      <left>
+        <form name="SignIn" method="POST">
+          <div class="card">
+            <img class="User_img" src="User.png" alt="User">
+
+
+
+            <div class="container">
+              <h2 style="color: red;-webkit-text-stroke-color: seashell;text-shadow: black .2px; -webkit-text-stroke-width: .3px;"><b</b></h2>
+
+
+            UserName: <input class="textbox" type="text"  id="username"  >
+              <br>
+            Password: <input class="textbox" type="password"  id="password" >
+
+
+
+              <p>Enter Valid Details and <br>Please sign in your account.</p></br>
+              <h5 style="color: cornsilk;">If you dont have accounr Please 
+              <a href="SignUp.html" style="color: rgb(208, 255, 0); -webkit-text-stroke-color:rgb(0, 0, 0); font-size: 24px; -webkit-text-stroke-width: .5px;">Sign up ..!</a></h5>
+              <br>
+             
+               
+
+              
+                
+              <input class="btn_signin"  type="button" id="signin" value="Sign In" onclick="cart()" > 
+              <input class="btn_clear" type="reset" id="clear" value="Clear">
+            </div>
+          </div>
+        </form>
+              
+      </left>
+      
+
+
+
+
+    </body>
+    <script type="text/javascript">
+      function cart(){
+          UserName = document.getElementById("userame");
+          Password= document.getElementById("password");
+
+          if(username.value==""){
+            alert("Please enter User Name..");
+          }
+          if(!(isNaN(username.value)))
+          {
+            alert("Please enter Valid User Name")
+          }
+
+          if(password.value==""){
+            alert("Please enter Password..");
+          }
+         
+          if(!(isNaN(password.value)))
+          
+          {
+            alert("Please enter Valid Password")
+          }
+      }
+      
+      
+      </script>
+    
+
+
+
+
+
+
+
+
+
+
+</html>

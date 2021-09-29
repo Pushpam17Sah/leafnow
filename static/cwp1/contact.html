@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <p class="navbar-brand" href="#"></p>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" >Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./product.html">Products</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      
+      <a href="./account.html" >Account</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+ </head>
+  <body>
+
+<div class="contact-section">
+  <p class="navbar-brand" href="#"></p><br><br>
+
+<br><br>
+  <h1>Contact Us</h1>
+ <br><br>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" style="color: black; " class="contact-form-text" placeholder="Your name">
+    <input type="email" style="color:black;" class="contact-form-text" placeholder="Your email">
+    <input type="text" style="color: black;"class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" style="color: black;"placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+
+
+  </body>
+</html>

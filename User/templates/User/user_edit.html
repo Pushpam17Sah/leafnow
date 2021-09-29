@@ -1,0 +1,64 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SignUp</title>
+	<link rel="stylesheet" type="text/css" href="account.css">
+
+</head>
+<body>
+
+	<div class="card">
+		<div class="container">
+
+			<!-- <?php include 'index.php';?> -->
+
+    <h2>New user</h2>
+    <form method="POST" class="user-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+</div>
+
+
+  <script type="text/javascript">
+	  function con(){
+		  email = document.getElementById("email");
+		  Password= document.getElementById("pass");
+		  Passwordc= document.getElementById("compass");
+
+		  if(email.value==""){
+			alert("Please enter Email Id..");
+		  }
+		  if(!(isNaN(email.value)))
+		  {
+			alert("Please enter Valid Email Id")
+		  }
+
+		  if(pass.value==""){
+			alert("Please enter Password..");
+		  }
+
+		  if(!(isNaN(pass.value)))
+
+		  {
+			alert("Please enter Valid Password")
+		  }
+
+	  }
+
+
+	  </script>
+
+	  <script src="index.js"></script>
+
+
+</body>
+</html>
+

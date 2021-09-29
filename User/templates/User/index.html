@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Now</title>
+
+  
+    <link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+
+</head>  
+
+<body>
+
+  <p class="navbar-brand" href="#">Leaf Now</p>
+<div class="topnav" id="myTopnav">
+
+  <a href="#home" class="active">Home</a>
+  <a href="./about.html">About Us</a>
+  <a href="./product.html">Products</a>
+  <a href="contact.html" >Contact Us</a>
+  
+  <a href="./account.html">Account</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+  <div class="container" style="margin-right:00px; margin-left: 650px;margin-top: 300px;">
+    <div class="para">
+      <h1 style="font-size: 35px;-webkit-text-stroke-color: black; -webkit-text-stroke-width: 1px; color: coral; text-shadow: black 0.7px 3px ; margin-left: 25px; ">  Plant a tree: save earth & lives</h1>
+  </div>
+    <p><strong> Summary</strong> <br>
+      CHHASE aims to plant 100,000 plants in three years. Preserving the tree is an obligation for everyone without exception, one tree will absorb approximately a ton of carbon dioxide during the course of its life cycle. 
+      Tree planting can restore global warming. Bring awareness to children. Protect the planet for our children and grandchildren. <br>
+      <strong>Challenge</strong><br>
+      Today Forests have undergone decline and shrinkage. Forests in Tamil nadu have been neglected and destroyed by modernization, 
+      Industrialization and legislation. Also, threatened because of increasing pressure from population and livestock. Tiruvallur and Kancheepuram of Tamil Nadu, are sufferers of poverty and vulnerability due to critical climatic change today.
+       Without wind and fresh air, the body is more vulnerable to attacks by disease. Mission is "To plant 100,000 plants " <br>
+
+       <strong>Solution</strong><br>
+       Plant 100,000 trees, 50 awareness campaigns and training to 50 volunteers to guide and plant in undeveloped lands. 
+       Besides tree planting, CHHASE will create awareness to general public
+       , SHGs and undeveloped land owners. Training of more teachers to educate the future generation. <br>
+       <strong>Long-Term Impact</strong><br>
+       Planting of trees to give shade and moisture conservation and reduce carbon pollution to restore global warming. 
+       Use of CFL lights will reduce production of heat. Recharge underground water will increase water level. 
+       Awareness will create responsibility to plant trees and use CFL by general public. <br><br>
+       <h1 style="color: red; font-size: 16px; animation:blink;" f>If you dont have account Please <a href="SignUp.html">Signup</a> or <a href="account.html">Log In</a></h1>
+
+
+
+
+    
+    
+    </p>
+
+
+
+    </div>
+     
+   
+
+
+
+
+
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+   <br><br>
+    <h2 style="-webkit-text-stroke-color: rgb(255, 255, 255);-webkit-text-stroke-width: .5px;font-size: 15px; color: black;">“People are like plants: They grow; they change every day.”</h2>
+          
+        </div>
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2 style="-webkit-text-stroke-color: rgb(255, 255, 255);-webkit-text-stroke-width: .5px;font-size: 15px; color: black;">“He who plants a tree plants a hope.”</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        <div class="info">
+          <h2 style="-webkit-text-stroke-color: rgb(255, 255, 255);-webkit-text-stroke-width: .5px;font-size: 15px; color: black;">“Knowledge is a plant of slow growth.”</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="4.jpg" alt="">
+        <div class="info">
+          <h2 style="-webkit-text-stroke-color: rgb(255, 255, 255);-webkit-text-stroke-width: .5px;font-size: 15px; color: black;">“All life on earth emanates from the green of the plant”</h2>
+          
+        </div>
+      </div>
+      <div class="slide">
+        <img src="5.jpg" alt="">
+        <div class="info">
+          <h2 style="-webkit-text-stroke-color: black;-webkit-text-stroke-width: .5px;font-size: 15px;">It is only the farmer who faithfully plants seeds in the Spring, who reaps a harvest in the Autumn.
+            </h2>
+          
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+
+  
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+  </body>
+  
+
+ 
+</html>
